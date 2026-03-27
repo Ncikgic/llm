@@ -1,0 +1,18 @@
+/usr/local/miniconda3/envs/train/lib/python3.10/site-packages/milvus_lite/__init__.py:15: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import DistributionNotFound, get_distribution
+Failed to initialize AsyncMilvusClient during Milvus initialization: <ConnectionConfigException: (code=1, message=Cannot create async connection: no running event loop. Please ensure you are running in an async context.)>. Async operations will be unavailable until AsyncMilvusClient is successfully created.
+创建 Embedding 模型成功......
+连接 Milvus 连接成功......
+Loading weights:   0%|          | 0/443 [00:00<?, ?it/s]Loading weights:   0%|          | 2/443 [00:00<01:19,  5.51it/s]Loading weights:   5%|▌         | 24/443 [00:00<00:06, 65.08it/s]Loading weights:  10%|█         | 46/443 [00:00<00:03, 107.62it/s]Loading weights:  16%|█▌        | 71/443 [00:00<00:02, 143.83it/s]Loading weights:  21%|██        | 92/443 [00:00<00:02, 157.10it/s]Loading weights:  26%|██▌       | 115/443 [00:00<00:01, 172.40it/s]Loading weights:  31%|███       | 136/443 [00:01<00:01, 177.74it/s]Loading weights:  36%|███▌      | 159/443 [00:01<00:01, 187.54it/s]Loading weights:  41%|████      | 180/443 [00:01<00:01, 187.48it/s]Loading weights:  46%|████▌     | 204/443 [00:01<00:01, 200.36it/s]Loading weights:  53%|█████▎    | 235/443 [00:01<00:00, 223.72it/s]Loading weights:  59%|█████▉    | 263/443 [00:01<00:00, 237.90it/s]Loading weights:  65%|██████▌   | 288/443 [00:01<00:00, 237.20it/s]Loading weights:  71%|███████   | 313/443 [00:01<00:00, 237.72it/s]Loading weights:  76%|███████▌  | 337/443 [00:01<00:00, 236.56it/s]Loading weights:  81%|████████▏ | 361/443 [00:01<00:00, 236.98it/s]Loading weights:  87%|████████▋ | 385/443 [00:02<00:00, 231.33it/s]Loading weights:  93%|█████████▎| 411/443 [00:02<00:00, 232.97it/s]Loading weights:  98%|█████████▊| 435/443 [00:02<00:00, 228.53it/s]Loading weights: 100%|██████████| 443/443 [00:02<00:00, 191.94it/s]
+INFO:     Started server process [5703]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8103 (Press CTRL+C to quit)
+Both `max_new_tokens` (=512) and `max_length`(=40960) seem to have been set. `max_new_tokens` will take precedence. Please refer to the documentation for more information. (https://huggingface.co/docs/transformers/main/en/main_classes/text_generation)
+创建 model 成功......
+INFO:     127.0.0.1:34602 - "POST / HTTP/1.1" 200 OK
+E0318 18:51:49.562488    5985 chttp2_transport.cc:1385] unix:/tmp/tmpxh9sr4b4_milvus_agent.db.sock: Received a GOAWAY with error code ENHANCE_YOUR_CALM and debug data equal to "too_many_pings". Current keepalive time (before throttling): 10000ms
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [5703]

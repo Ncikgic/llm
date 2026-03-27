@@ -1,0 +1,2 @@
+{"timestamp": "2026-03-18T17:15:07.664780", "version": "v_1.0.0", "results": {"recall": {}, "llm_judge": {"empathy": 45.25, "faithfulness": 79.5, "helpfulness": 54.62, "overall": 59.79}, "stress": {"concurrency": 50, "duration_sec": 40, "total_requests": 50, "success_rate_pct": 2.0, "avg_latency_ms": 24872.39, "avg_ttft_ms": 24872.31, "throughput_rps": 1.22, "total_cost_sec": 41.01}}}
+

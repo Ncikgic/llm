@@ -1,0 +1,128 @@
+2026-03-20 18:45:30,837 - INFO - [vector.py:221] - 连接 Milvus 失败: Too many custom fields: ['dense', 'sparse']. They cannot be mapped to a limited number of embedding functions, nor do they belong to any build-in function.
+2026-03-20 18:45:58,453 - INFO - [vector.py:221] - 连接 Milvus 失败: Too many custom fields: ['dense', 'sparse']. They cannot be mapped to a limited number of embedding functions, nor do they belong to any build-in function.
+2026-03-20 18:46:59,687 - INFO - [test.py:254] - 
+============================================================
+2026-03-20 18:46:59,687 - INFO - [test.py:255] - 启动 Agent_LN 综合评测系统 | 当前版本: 1.0.0
+2026-03-20 18:46:59,687 - INFO - [test.py:256] - ============================================================
+2026-03-20 18:46:59,687 - INFO - [test.py:268] - 
+========================================
+2026-03-20 18:46:59,687 - INFO - [test.py:269] - 开始召回测试（使用 recall_test.py）
+2026-03-20 18:47:01,112 - INFO - [vector.py:221] - 连接 Milvus 失败: Too many custom fields: ['dense', 'sparse']. They cannot be mapped to a limited number of embedding functions, nor do they belong to any build-in function.
+2026-03-20 18:47:03,852 - INFO - [test.py:276] - ✓ 召回测试完成
+2026-03-20 18:47:03,852 - INFO - [test.py:289] - 
+========================================
+2026-03-20 18:47:03,852 - INFO - [test.py:290] - 开始压力测试
+2026-03-20 18:47:03,852 - INFO - [test.py:34] - 
+========================================
+2026-03-20 18:47:03,852 - INFO - [test.py:73] -  开始时长压力测试 (并发数: 10, 持续时间: 10秒)
+2026-03-20 18:47:13,930 - INFO - [test.py:100] - 🔥 压测完成!
+2026-03-20 18:47:13,930 - INFO - [test.py:101] -    总请求数: 8881
+2026-03-20 18:47:13,930 - INFO - [test.py:102] -    成功率: 0.0%
+2026-03-20 18:47:13,930 - INFO - [test.py:103] -    平均延迟: 0.00 ms
+2026-03-20 18:47:13,930 - INFO - [test.py:104] -    平均TTFT: 0.00 ms
+2026-03-20 18:47:13,930 - INFO - [test.py:105] -    QPS: 886.39 请求/秒
+2026-03-20 18:47:13,930 - INFO - [test.py:106] -    总耗时: 10.02 秒
+2026-03-20 18:47:13,931 - INFO - [test.py:294] - ✓ 压力测试完成
+2026-03-20 18:47:13,931 - INFO - [test.py:300] - 
+========================================
+2026-03-20 18:47:13,931 - INFO - [test.py:301] - 开始 LLM 裁判测试
+2026-03-20 18:47:13,931 - INFO - [test.py:120] - 
+========================================
+2026-03-20 18:47:13,931 - INFO - [test.py:121] - 开始 LLM-as-a-Judge 自动化打分
+2026-03-20 18:47:13,933 - INFO - [test.py:235] - 处理查询 '什么是焦虑' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:13,934 - INFO - [test.py:235] - 处理查询 '焦虑的常见症状有哪些' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:13,936 - INFO - [test.py:235] - 处理查询 '长期焦虑会对身体产生什么影响' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:13,938 - INFO - [test.py:235] - 处理查询 '焦虑和压力有什么区别' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:13,939 - INFO - [test.py:235] - 处理查询 '什么是抑郁症' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:13,940 - INFO - [test.py:239] - 警告: 没有有效的评测结果
+2026-03-20 18:47:13,940 - INFO - [test.py:313] - ✓ LLM裁判测试完成
+2026-03-20 18:47:13,940 - INFO - [test.py:325] - 
+============================================================
+2026-03-20 18:47:13,940 - INFO - [test.py:326] - 评测汇总
+2026-03-20 18:47:13,940 - INFO - [test.py:327] - ============================================================
+2026-03-20 18:47:13,940 - INFO - [test.py:342] - 
+压力测试结果:
+2026-03-20 18:47:13,940 - INFO - [test.py:344] -   总请求数: 8881
+2026-03-20 18:47:13,940 - INFO - [test.py:345] -   成功率: 0.0%
+2026-03-20 18:47:13,940 - INFO - [test.py:346] -   平均延迟: 0.00 ms
+2026-03-20 18:47:13,940 - INFO - [test.py:347] -   平均TTFT: 0.00 ms
+2026-03-20 18:47:13,940 - INFO - [test.py:348] -   QPS: 886.39 请求/秒
+2026-03-20 18:47:13,941 - INFO - [test.py:362] - 
+✓ 评测结果已保存到: /hy-tmp/agent_ln/metrics_history.jsonl
+2026-03-20 18:47:13,941 - INFO - [test.py:366] - 
+============================================================
+2026-03-20 18:47:13,941 - INFO - [test.py:367] - 所有测试完成!
+2026-03-20 18:47:13,941 - INFO - [test.py:368] - ============================================================
+2026-03-20 18:47:30,761 - INFO - [test.py:254] - 
+============================================================
+2026-03-20 18:47:30,761 - INFO - [test.py:255] - 启动 Agent_LN 综合评测系统 | 当前版本: 1.0.0
+2026-03-20 18:47:30,761 - INFO - [test.py:256] - ============================================================
+2026-03-20 18:47:30,761 - INFO - [test.py:268] - 
+========================================
+2026-03-20 18:47:30,761 - INFO - [test.py:269] - 开始召回测试（使用 recall_test.py）
+2026-03-20 18:47:32,180 - INFO - [vector.py:221] - 连接 Milvus 失败: Too many custom fields: ['dense', 'sparse']. They cannot be mapped to a limited number of embedding functions, nor do they belong to any build-in function.
+2026-03-20 18:47:34,982 - INFO - [test.py:276] - ✓ 召回测试完成
+2026-03-20 18:47:34,982 - INFO - [test.py:289] - 
+========================================
+2026-03-20 18:47:34,982 - INFO - [test.py:290] - 开始压力测试
+2026-03-20 18:47:34,982 - INFO - [test.py:34] - 
+========================================
+2026-03-20 18:47:34,982 - INFO - [test.py:73] -  开始时长压力测试 (并发数: 10, 持续时间: 10秒)
+2026-03-20 18:47:45,045 - INFO - [test.py:100] - 🔥 压测完成!
+2026-03-20 18:47:45,046 - INFO - [test.py:101] -    总请求数: 7925
+2026-03-20 18:47:45,046 - INFO - [test.py:102] -    成功率: 0.0%
+2026-03-20 18:47:45,046 - INFO - [test.py:103] -    平均延迟: 0.00 ms
+2026-03-20 18:47:45,046 - INFO - [test.py:104] -    平均TTFT: 0.00 ms
+2026-03-20 18:47:45,046 - INFO - [test.py:105] -    QPS: 791.59 请求/秒
+2026-03-20 18:47:45,046 - INFO - [test.py:106] -    总耗时: 10.01 秒
+2026-03-20 18:47:45,046 - INFO - [test.py:294] - ✓ 压力测试完成
+2026-03-20 18:47:45,046 - INFO - [test.py:300] - 
+========================================
+2026-03-20 18:47:45,046 - INFO - [test.py:301] - 开始 LLM 裁判测试
+2026-03-20 18:47:45,047 - INFO - [test.py:120] - 
+========================================
+2026-03-20 18:47:45,047 - INFO - [test.py:121] - 开始 LLM-as-a-Judge 自动化打分
+2026-03-20 18:47:45,048 - INFO - [test.py:235] - 处理查询 '什么是焦虑' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:45,051 - INFO - [test.py:235] - 处理查询 '焦虑的常见症状有哪些' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:45,052 - INFO - [test.py:235] - 处理查询 '长期焦虑会对身体产生什么影响' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:45,053 - INFO - [test.py:235] - 处理查询 '焦虑和压力有什么区别' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:45,055 - INFO - [test.py:235] - 处理查询 '什么是抑郁症' 时出错: HTTPConnectionPool(host='127.0.0.1', port=8103): Max retries exceeded with url: / (Caused by NewConnectionError("HTTPConnection(host='127.0.0.1', port=8103): Failed to establish a new connection: [Errno 111] Connection refused"))
+2026-03-20 18:47:45,055 - INFO - [test.py:239] - 警告: 没有有效的评测结果
+2026-03-20 18:47:45,055 - INFO - [test.py:313] - ✓ LLM裁判测试完成
+2026-03-20 18:47:45,055 - INFO - [test.py:325] - 
+============================================================
+2026-03-20 18:47:45,055 - INFO - [test.py:326] - 评测汇总
+2026-03-20 18:47:45,055 - INFO - [test.py:327] - ============================================================
+2026-03-20 18:47:45,055 - INFO - [test.py:342] - 
+压力测试结果:
+2026-03-20 18:47:45,055 - INFO - [test.py:344] -   总请求数: 7925
+2026-03-20 18:47:45,055 - INFO - [test.py:345] -   成功率: 0.0%
+2026-03-20 18:47:45,055 - INFO - [test.py:346] -   平均延迟: 0.00 ms
+2026-03-20 18:47:45,055 - INFO - [test.py:347] -   平均TTFT: 0.00 ms
+2026-03-20 18:47:45,056 - INFO - [test.py:348] -   QPS: 791.59 请求/秒
+2026-03-20 18:47:45,056 - INFO - [test.py:362] - 
+✓ 评测结果已保存到: /hy-tmp/agent_ln/metrics_history.jsonl
+2026-03-20 18:47:45,056 - INFO - [test.py:366] - 
+============================================================
+2026-03-20 18:47:45,056 - INFO - [test.py:367] - 所有测试完成!
+2026-03-20 18:47:45,056 - INFO - [test.py:368] - ============================================================
+2026-03-20 18:54:09,110 - INFO - [app.py:27] - 创建 Embedding 模型成功......
+2026-03-20 18:54:09,111 - INFO - [vector.py:221] - 连接 Milvus 失败: Too many custom fields: ['dense', 'sparse']. They cannot be mapped to a limited number of embedding functions, nor do they belong to any build-in function.
+2026-03-20 18:55:35,320 - INFO - [app.py:27] - 创建 Embedding 模型成功......
+2026-03-20 18:55:35,321 - INFO - [vector.py:221] - 连接 Milvus 失败: Too many custom fields: ['dense', 'sparse']. They cannot be mapped to a limited number of embedding functions, nor do they belong to any build-in function.
+2026-03-20 19:08:53,545 - INFO - [vector.py:219] - 连接 Milvus 集合 'test_collection' 成功......
+2026-03-20 19:16:52,699 - INFO - [app.py:27] - 创建 Embedding 模型成功......
+2026-03-20 19:16:53,290 - INFO - [vector.py:222] - 连接 Milvus 失败: <MilvusException: (code=1100, message=Can not found field sparse: invalid parameter)>
+2026-03-20 19:25:14,202 - INFO - [app.py:27] - 创建 Embedding 模型成功......
+2026-03-20 19:25:14,790 - INFO - [vector.py:212] - 集合 'psyqa_collection' 缺少sparse字段，删除并重新创建...
+2026-03-20 19:25:14,809 - INFO - [vector.py:236] - 连接 Milvus 集合 'psyqa_collection' 成功......
+2026-03-20 19:26:05,371 - INFO - [app.py:27] - 创建 Embedding 模型成功......
+2026-03-20 19:26:05,961 - INFO - [vector.py:236] - 连接 Milvus 集合 'psyqa_collection' 成功......
+2026-03-20 22:52:48,922 - INFO - [app.py:27] - 创建 Embedding 模型成功......
+2026-03-20 22:52:49,515 - INFO - [vector.py:236] - 连接 Milvus 集合 'psyqa_collection' 成功......
+2026-03-20 23:15:06,994 - INFO - [app.py:27] - 创建 Embedding 模型成功......
+2026-03-20 23:15:07,593 - INFO - [vector.py:236] - 连接 Milvus 集合 'psyqa_collection' 成功......
+2026-03-20 23:29:27,600 - INFO - [app.py:27] - 创建 Embedding 模型成功......
+2026-03-20 23:29:28,195 - INFO - [vector.py:236] - 连接 Milvus 集合 'psyqa_collection' 成功......
+2026-03-20 23:51:47,526 - INFO - [app.py:27] - 创建 Embedding 模型成功......
+2026-03-20 23:51:48,120 - INFO - [vector.py:236] - 连接 Milvus 集合 'psyqa_collection' 成功......
